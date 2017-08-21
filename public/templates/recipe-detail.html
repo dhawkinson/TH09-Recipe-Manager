@@ -64,9 +64,11 @@
     </div>
     <div class="grid-30">
         <p>
-            <!-- bind to the recipe model's `category` property, populate with categories from the database. -->
-            <select ng-model="recipeDetail.category" ng-options="category as category.name for category in categories track by category.name">
+            <!-- bind to the recipe model's `category` property, populate with categories from the database. 
+                    tried to use ng-options but couldn't get it to work correctly so went to ng-repeat -->
+            <select ng-model="recipeDetail.category">
                 <option value="">Select A Category</option>
+                <option ng-repeat="category in categories" value="{{ category.name }}">{{ category.name }}</option>
             </select>
         </p>
     </div>
@@ -159,6 +161,7 @@
                 <a ng-click="removeIngredient(recipeDetail, $index)" class="no-action-link "> <img src="images/delete.svg " height="12px "> </a>
             </p>
         </div>
+        <div class="clear"></div>
     </div>
     
     <div class="prefix-20 grid-80 add-row">

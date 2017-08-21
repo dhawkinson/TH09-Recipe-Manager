@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
+
     <head>
+
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
       
@@ -9,25 +11,35 @@
         <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="styles/unsemantic-grid-responsive.css">
         <link rel="stylesheet" href="styles/main.css">
+
     </head>
 
-    <body ng-app="app">                     <!-- ng-app bootstraps the angularjs app -->
-        <div class="grid-container">          
-            <div class="grid-100">
-                <h1>
-                <img src="images/chefbot.svg" height="60px">
+    <body ng-app="app">                     <!-- ng-app, bootstraps the angularjs (makes angularjs active in this portion of the document) -->
+
+        <div class="grid-container"> 
+
+            <div class="grid-100">          <!-- display the heading -->
+                <h1 class="heading">
+                <img src="images/swedishChef.png" height="60px" class="chefPic">
                 <br>
                 My Recipes
                 </h1>
-            </div>
-            <div class="grid-100">              
-                <div class="recipes"> 
-                    <div ng-view></div>     <!-- ng-view -- directs the router to find the routes. MUST HAVE -->
-                    <div class="row">&nbsp;</div>
-                </div>
-            </div>
-        </div>
+            </div>          <!-- end of display the heading -->
 
+            <div class="grid-100">          <!-- app routing -->
+
+                <div class="recipes">
+
+                    <div ng-view></div>     <!-- ng-view, directs the router to find the routes. MUST HAVE -->
+                    <div class="row">&nbsp;</div>
+
+                </div>
+
+            </div>          <!-- end of app routing -->
+
+        </div>  <!-- end of container) -->
+
+        <!--    load the app scripts    -->
         <script src="vendor/angular.js"></script>
         <script src="vendor/angular-route.js"></script>
 

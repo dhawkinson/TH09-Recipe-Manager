@@ -1,19 +1,38 @@
-
 body {
   max-width: 800px;
-  background: #f6ebe5;
+  background: url(../images/meal.jpg) no-repeat fixed center;
+  background-size: cover;
+  /*background: #f6ebe5;*/
   color: #808080;
-  font-family: 'Varela Round', Helvetica, Arial, sans-serif;
+  font-family: 'Play', sans-serif;
   text-align: center;
   margin: 0 auto;
   font-size: 16px;
-  padding-bottom: 80px; }
+  padding-bottom: 80px;
+}
+
+  .chefPic {
+    border-radius: 100%;
+    border: 3px solid white;
+  }
+
+  .heading {
+    color: #FFFFFF;
+    font-weight: bold;
+  }
+
+  .not-found {
+    color: #FA8F00;
+    font-weight: bold;
+    font-style: italic;
+  }
 
 a {
   color: #808080;
   text-decoration: none; }
   a:hover {
-    color: #676767; }
+    color: #676767;
+   }
 
 h1 {
   font-size: 26px;
@@ -64,7 +83,7 @@ button {
   padding: 10px 20px;
   border-radius: 5px;
   color: white;
-  background: #808080;
+  background: #AD7575;
   cursor: pointer; }
   button.secondary {
     background: #bfbab4; }
@@ -79,12 +98,18 @@ button {
   text-align: left; }
   .recipes .row {
     background: white;
-    border-top: 1px solid #f6ebe5;
-    border-bottom: 1px solid #f6ebe5; }
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-radius: 8px 8px 8px 8px;
+    -moz-background-clip: padding;     /* Firefox 3.6 */
+    -webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
+    background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+   }
     .recipes .row:first-child {
-      border-radius: 8px 8px 0 0; }
+      border-radius: 8px 8px 8px 8px; }
     .recipes .row:last-child {
-      border-radius: 0 0 8px 8px; }
+      border-radius: 8px 8px 8px 8px;
+     }
 
 .add-row {
   margin-bottom: 30px; }

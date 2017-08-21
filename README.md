@@ -136,5 +136,5 @@ To get an "exceeds" rating, you can expand on the project in the following ways:
 
 ###1 step
  
-#### [ ] Write code that asks the user to confirm a recipe deletion before it is deleted.
+#### [x] Write code that asks the user to confirm a recipe deletion before it is deleted.
 

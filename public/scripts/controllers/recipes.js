@@ -8,8 +8,7 @@
                 $scope.categories = res.data;
             });
             //  get all recipes for the category
-            //dataService.getRecipes(res => {       --  original line            
-            dataService.getRecipesCategory(res => {
+            dataService.getRecipes(res => {       
                 $scope.recipes = res.data;
             });
             //  delete a recipe

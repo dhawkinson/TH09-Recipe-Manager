@@ -14,11 +14,7 @@
                 "steps": []
             };
             
-            //  editing is true when there is a match to an existing item
-            $scope.editing = $location.url() === `/edit/${$routeParams.id}` ? true : false;
-            
-            //  make the recipe category = the selected category
-            $scope.recipeDetail.cataegory = $scope.categories[0];
+            $scope.editing = $location.url() === `/edit/${$routeParams.id}` ? true : false;    //  true = id has a value else false
     
             $scope.cancelRecipeEdit = () => {
                 $location.path('/');
@@ -61,11 +57,11 @@
                     })[0] || newRecipe;
             });
     
-            dataService.getAllFoodItems(response => {
+            dataService.getFoodItems(response => {
                 $scope.foodItems = response.data;
             });
     
-            dataService.getAllCategories(response => {
+            dataService.getCategories(response => {
                 $scope.categories = response.data;
             });
     
