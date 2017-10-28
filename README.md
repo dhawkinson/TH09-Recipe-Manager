@@ -1,6 +1,6 @@
 # fsjsProject09
 
-## Single Page App
+## Recipe Manager App
 
 ##Project Instructions
 
