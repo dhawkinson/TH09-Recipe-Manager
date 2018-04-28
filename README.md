@@ -1,7 +1,7 @@
 # TH09-Recipe-Manager
 Full Stack Java Script Project 09 - Treehouse TechDegree
 
-Recipe Manager App using Node, Angula.JS and Postman
+Recipe Manager App using Node, AngularJS and Postman
 
 <ul><li>Create an AngularJS module, save it into a variable called app, and add ngRoute as a dependency.</li>
 <li>Create a service that will make calls to the REST API we have provided for you.</li>
